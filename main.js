@@ -1,9 +1,3 @@
-/* eslint-disable prefer-arrow-callback */
-/* eslint-disable object-shorthand */
-/* eslint-disable no-plusplus */
-/* eslint-disable vars-on-top */
-/* eslint-disable no-var */
-
 var avatars = [];
 
 var renderAvatar = function () {

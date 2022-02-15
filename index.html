@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+      integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Github Avatar Search</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <div class="page-header">
+            <h1>Github Avatar Search</h1>
+            <hr />
+          </div>
+
+          <form class="search-form">
+            <h3>Enter SHA-1 Hash</h3>
+
+            <div class="form-group">
+              <input type="text" class="form-control" id="search-query" />
+            </div>
+
+            <button type="button" class="btn btn-primary search">Search</button>
+          </form>
+
+          <hr />
+
+          <h3 class="results-header">Results</h3>
+
+          <div class="avatars row justify-content-center">
+            <img
+              src="loading-spinner.png"
+              alt="loading spinner"
+              class="loading-img"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script id="avatar-template" type="text/x-handlebars-template">
+      <div class="avatar col-md-3">
+        <h5>{{login}}</h5>
+        <img src="{{avatarURL}}" alt="" />
+      </div>
+    </script>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Handlebars -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.11/handlebars.min.js"></script>
+    <script src="main.js" type="text/javascript"></script>
+  </body>
+</html>

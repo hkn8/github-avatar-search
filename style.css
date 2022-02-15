@@ -1,0 +1,38 @@
+body {
+  background-color: #dcdcdc;
+}
+
+.page-header {
+  margin-top: 40px;
+}
+
+.search-form {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.loading-img {
+  width: 10%;
+  display: none;
+}
+
+.results-header {
+  display: none;
+}
+
+.avatar {
+  text-align: center;
+  padding: 10px;
+  margin: 15px;
+  border: 2px solid #000;
+}
+
+.avatar img {
+  display: block;
+  margin: auto;
+  width: 100%;
+}
